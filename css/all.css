@@ -1,0 +1,900 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+* {box-sizing: border-box;}
+*:focus {outline: none;}
+body {line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {list-style:none;}
+ol, ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+		text-decoration:none;
+}
+a:hover {text-decoration:none;}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+input, textarea, select {
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+input, select {vertical-align:middle;}
+input::-webkit-input-placeholder{color:#000;}
+input:focus::-webkit-input-placeholder{color:#000;}
+/*
+@media (min-width: 1921px){}
+@media (width: 1920px){}
+@media (min-width: 1440px) and (max-width: 1919px) {}
+@media (min-width: 1360px) and (max-width: 1439px) {}
+@media (min-width: 1280px) and (max-width: 1359px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 375px) and (max-width: 767px) {}
+@media (min-width: 320px) and (max-width: 374px) {}
+*/
+/*
+@media (max-width: 1919px) {}
+@media (max-width: 1439px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 767px) {}
+*/
+
+/* ------------тренування початок------------- */
+@media (max-width: 767px) {
+  header .layout{
+    width: 96%;
+  }
+  header .logo{
+    width: 133px;
+    height: 20px;
+  }
+  header nav ul{
+    display: none;
+  }
+  main .first_view .first_view .layout{
+    width: 96%;
+  }
+  /* main .first_view .layout .container{
+    flex-direction: column;
+  } */
+  main .first_view .layout .container .text h2{
+    font-size: 28px;
+    /* text-align: center; */
+  }
+  main .first_view .layout .container .text p{
+    font-size: 16px;
+    /* text-align: center; */
+  }
+  /* main .first_view .layout .container .baner{
+    width: 333px;
+    height: 205px;
+  } */
+}
+
+/* ------------тренування кінець------------- */
+
+#wrapper {
+	display:block;
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.layout {
+  display: block;
+  position:relative;
+  overflow: hidden;
+  width:1400px;
+	margin:0 auto 0 auto;
+}
+header,
+main,
+footer,
+section {
+  display: block;
+  position:relative;
+  overflow: hidden;
+  width: 100%;
+}
+#content {
+  display: block;
+  position:relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+header{
+  width: 100%;
+  height: 80px;
+}
+header .layout .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 0 0;
+}
+header .layout .container .logo{
+  width: 202px;
+  height: 30px;
+}
+header .layout .container .logo img{
+  width: 100%;
+  height: 100%;
+}
+header .layout .container .logo h1{
+  text-indent: -9999px;
+}
+header .layout .container nav{
+  padding: 8px 0 0 0;
+  display: flex;
+  gap: 60px;
+}
+header .layout .container nav ul{
+  display: flex;
+  gap: 30px;
+}
+header .layout .container nav ul li a{
+  color: #282D33;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .layout .container nav ul li a:hover{
+  color: #f8992b;
+  border-bottom: 1px solid #f8992b;
+}
+header .layout .container nav .language select{
+  color: #282D33;
+  font-size: 16px;
+  font-weight: 500;
+  border-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+header .layout .container nav .language select:hover{
+  color: #f8992b;
+}
+main .first_view{
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: #F9F9F9;
+}
+main .first_view .layout{
+  width: 96%;
+}
+main .first_view .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+main .first_view .text{
+  width: 480px;
+  margin: 0 0 0 125px;
+}
+main .first_view .text h2{
+  color: #30363d;
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+main .first_view .text p{
+  color: #30363d;
+  font-size: 18px;
+  font-weight: 400;
+}
+main .first_view .baner{
+  width: 961px;
+  height: 591px;
+  margin: 79px 0 0 0;
+}
+main .first_view .baner img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.vitaminise{
+  background-color: #0F084E;
+  padding: 0 0 140px 0;
+}
+.vitaminise .layout{
+  width: 1440px;
+}
+.vitaminise h2{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding: 140px 0 40px 0;
+}
+.vitaminise .container .card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.vitaminise .container .card .top{
+  width: 337px;
+  height: 164px;
+  background-color: #5d5888;
+  border-radius: 8px;
+}
+.vitaminise .container .card .top .insurance{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+.vitaminise .container .card .top .insurance .bloc_1{
+  padding: 34px 0 0 0;
+}
+.vitaminise .container .card .top .insurance .bloc_1 span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.vitaminise .container .card .top .insurance .line_1,
+.vitaminise .container .card .top .insurance .line_2,
+.vitaminise .container .card .top .insurance .line_3,
+.vitaminise .container .card .top .insurance .line_4{
+  height: 8px;
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  margin: 0 0 8px 0;
+}
+.vitaminise .container .card .top .insurance .line_1{
+  width: 221px;
+}
+.vitaminise .container .card .top .insurance .line_2,
+.vitaminise .container .card .top .insurance .line_4{
+  width: 192px;
+}
+.vitaminise .container .card .top .insurance .line_3{
+  width: 243px;
+}
+.vitaminise .container .card .top .support{
+  position: absolute;
+}
+.vitaminise .container .card .top .support .message_holder{
+  width: 40px;
+  height: 40px;
+}
+.vitaminise .container .card .top .support .message_holder img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 35%;
+  left: 700%;
+}
+.vitaminise .container .card .top .support .consultant{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 0 0 52px;
+}
+.vitaminise .container .card .top .support .consultant .img_holder{
+  width: 53px;
+  height: 53px;
+}
+.vitaminise .container .card .top .support .consultant .img_holder img{
+  width: 100%;
+  height: 100%;
+}
+.vitaminise .container .card .top .support .consultant .consultant_text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 154px;
+  height: 45px;
+}
+.vitaminise .container .card .top .support .consultant .consultant_text span{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.vitaminise .container .card .top .support .consultant .consultant_text p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+} 
+.vitaminise .container .card .top .claims{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.vitaminise .container .card .top .claims .bloc{
+  display: flex;
+  gap: 15px;
+  padding: 35px 0 0 0;
+} 
+.vitaminise .container .card .top .claims .bloc .img_holder{
+  width: 44px;
+  height: 36px;
+}
+.vitaminise .container .card .top .claims .bloc .img_holder img{
+  width: 100%;
+  height: 100%;
+}
+.vitaminise .container .card .top .claims .items .line_1,
+.vitaminise .container .card .top .claims .items .line_2,
+.vitaminise .container .card .top .claims .items .line_3{
+  background-color: #f4f6f9;
+  height: 8px;
+  border-radius: 8px;
+  margin: 0 0 8px 0;
+}
+.vitaminise .container .card .top .claims .items .line_1{
+  width: 178px;
+}
+.vitaminise .container .card .top .claims .items .line_2{
+  width: 155px;
+}
+.vitaminise .container .card .top .claims .items .line_3{
+  width: 200px;
+}
+.vitaminise .container .card .top .claims a{
+  width: 243px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  background-color: #f8992b;
+  border-radius: 8px;
+}
+.vitaminise .container .payments{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+  padding: 30px 0 0 0;
+}
+.vitaminise .container .payments span{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.vitaminise .container .payments .flex_container{
+  display: flex;
+  gap: 6px;
+  position: relative;
+}
+.vitaminise .container .payments .flex_container a,
+.vitaminise .container .payments .flex_container div{
+  width: 77px;
+  height: 38px;
+  background-color: #f4f6f9;
+  border-radius: 8px;
+}
+
+.vitaminise .container .payments .flex_container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vitaminise .container .payments .flex_container .card{
+  width: 44px;
+  height: 32px;
+  position: absolute;
+  left: 41%;
+  bottom: 63%;
+}
+.vitaminise .container .card .all .text{
+  width: 306px;
+  padding: 32px 0 0 0;
+  text-align: center;
+}
+.vitaminise .container .card .all .text h3{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 0 0 12px 0;
+}
+.vitaminise .container .card .all .text p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.our_policies{
+  padding: 140px 0 0 0;
+}
+.our_policies h2{
+  color: #30363d;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.our_policies .cards_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+.our_policies .cards_container .cards{
+  width: 338px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px 4px rgba(90%, 90%, 90%, 0.5);
+  margin: 0 0 140px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 73px 0 0 0;
+}
+.our_policies .cards_container .cards .img_holder{
+  width: 92px;
+  height: 92px;
+  margin: 0 0 27px 0;
+}
+.our_policies .cards_container .cards .img_holder img{
+  width: 100%;
+  height: 100%;
+}
+.our_policies .cards_container .cards h3{
+  color: #30363d;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+.our_policies .cards_container .cards p{
+  color: #30363d;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 32px 0;
+  width: 220px;
+  text-align: center;
+}
+.our_policies .cards_container .cards a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: 216px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #f8992b;
+  text-align: center;
+  line-height: 56px;
+  margin: 0 0 16px 0;
+}
+.our_policies .cards_container .cards a:hover{
+  background-color: #ff8a01;
+  box-shadow: 0 10px 8px rgba(90%, 90%, 90%);
+}
+.our_policies .cards_container .cards span{
+  color: #b3b5c4;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.get_insured{
+  background-color: #f4f6f9;
+}
+.get_insured h2{
+  color: #30363d;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 140px 0 80px 0;
+  text-align: center;
+}
+.get_insured .phone_container{
+  display:flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 0 140px 0;
+}
+
+.get_insured .phone_container .text{
+  padding: 85px 0 0 0;
+}
+
+.get_insured .phone_container .text h3{
+  color: #30363d;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 0 22px 0;
+}
+.get_insured .phone_container .text h3 span{
+  background: linear-gradient(to top, rgba(153, 243, 35, 0.5) 30%, transparent 60%);
+  border-radius: 5px;
+}
+.get_insured .phone_container .text p{
+  color: #30363d;
+  font-size: 16px;
+  font-weight: 400;
+  width: 337px;
+}
+.get_insured .phone_container .text .arrow_holder{
+  width: 260px;
+  height: 88px;
+}
+.get_insured .phone_container .text .arrow_holder img{
+  width: 100%;
+  height: 100%;
+}
+.get_insured .phone_container .text .arrow_assistant img{
+  -webkit-transform: rotate(0deg) translate(90px, 80px);
+  -moz-transform: rotate(0deg) translate(90px, 80px);
+  -ms-transform: rotae(0deg) translate(90px, 80px);
+  transform: rotate(0deg) translate(90px, 80px);
+}
+.get_insured .phone_container .text .arrow_policy img{
+  -webkit-transform: scaleX(-1) rotate(376deg) translate(57px, 86px);
+  -moz-transform: scaleX(-1) rotate(376deg) translate(57px, 86px);
+  -ms-transform: scaleX(-1) rotae(376deg) translate(57px, 86px);
+  transform: scaleX(-1) rotate(376deg) translate(57px, 86px);
+}
+.get_insured .phone_container .text .arrow_pay img{
+  -webkit-transform: rotate(0deg) translate(90px, 100px);
+  -moz-transform: rotate(0deg) translate(90px, 100px);
+  -ms-transform: rotae(0deg) translate(90px, 100px);
+  transform: rotate(0deg) translate(90px, 100px);
+}
+.get_insured .phone_container .text .arrow_claims img{
+  -webkit-transform: scaleX(-1) rotate(376deg) translate(57px, 86px);
+  -moz-transform: scaleX(-1) rotate(376deg) translate(57px, 86px);
+  -ms-transform: scaleX(-1) rotae(376deg) translate(57px, 86px);
+  transform: scaleX(-1) rotate(376deg) translate(57px, 86px);
+}
+.get_insured .phone_container .whole_block{
+  display: flex;
+  justify-content: center;
+  gap: 78px;
+}
+.get_insured .phone_container .whole_block .phone{
+  position: relative;
+}
+.get_insured .phone_container .whole_block .phone .img_holder{
+  width: 270px;
+  height: 473px;
+}
+.get_insured .phone_container .whole_block .phone .img_holder img{
+  width: 100%;
+  height: 100%;
+}
+.get_insured .phone_container .whole_block .phone p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.get_insured .phone_container .whole_block .phone p.white{
+  color: #30363d;
+  background-color: #fff;
+  border-radius: 6px;
+  width: 263px;
+  height: 49px;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  top: 174px;
+  right: 45px;
+  box-shadow: 2px 4px 10px rgba(90%, 90%, 90%, 0.5);
+}
+.get_insured .phone_container .whole_block .phone p.blue{
+  color: #fff;
+  background-color: #0f084e;
+  width: 202px;
+  height: 49px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  top: 248px;
+  left: 123px;
+}
+.get_insured .phone_container .whole_block .phone .car_holder{
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  top: 84px;
+  left: 137px;
+  z-index: 1;
+}
+.get_insured .phone_container .whole_block .phone .car_holder img{
+  width: 100%;
+  height: 100%;
+}
+.get_insured .phone_container .whole_block .phone .text_message{
+  width: 237px;
+  height: 164px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 2px 4px 10px rgba(90%, 90%, 90%, 0.5);
+  position: absolute;
+  top: 113px;
+  left: 47px;
+}
+.get_insured .phone_container .whole_block .phone .text_message h4{
+  color: #30363d;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  padding: 37px 0 10px 0;
+}
+.get_insured .phone_container .whole_block .phone .text_message span{
+  color: #36303d;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 0 18px 0;
+  display: block;
+}
+.get_insured .phone_container .whole_block .phone .text_message p{
+  color: #30363d;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 0 0 9px 24px;
+}
+.get_insured .phone_container .whole_block .phone .text_message .elements{
+  background-image: url('../images/ico_check.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 8px 6px;
+  margin: 0 0 0 24px;
+}
+.get_insured .phone_container .whole_block .phone .text_message .elements .line{
+  width: 173px;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  margin: 0 0 10px 15px;
+}
+.get_insured .phone_container .whole_block .phone .card_holder{
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 104px;
+  left: 40px;
+  z-index: 1;
+}
+.get_insured .phone_container .whole_block .phone .text_pay{
+  width: 220px;
+  height: 141px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px rgba(90%, 90%, 90%, 0.5);
+  position: absolute;
+  top: 125px;
+  right: 88px;
+}
+.get_insured .phone_container .whole_block .phone .text_pay h4{
+  color: #30363d;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 38px 0 10px 0;
+  text-align: center;
+}
+.get_insured .phone_container .whole_block .phone .text_pay span{
+  color: #30363d;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 17px 0;
+  text-align: center;
+  display: block;
+}
+.get_insured .phone_container .whole_block .phone .text_pay button{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  width: 190px;
+  height: 35px;
+  background-color: #f8992b;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 35px;
+  display: block;
+  margin: 0 0 0 15px;
+}
+.get_insured .phone_container .whole_block .phone p.blue_claims{
+  color: #fff;
+  background-color: #0f084e;
+  width: 209px;
+  height: 49px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  top: 161px;
+  left: 81px;
+}
+.get_insured .phone_container .whole_block .phone p.white_claims{
+  color: #30363d;
+  background-color: #fff;
+  border-radius: 6px;
+  width: 259px;
+  height: 49px;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  top: 235px;
+  right: 32px;
+  box-shadow: 2px 4px 10px rgba(90%, 90%, 90%, 0.5);
+}
+.get_insured .phone_container .img_right{
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about_insurance{
+  padding: 134px 0 0 0;
+}
+.about_insurance .layout{
+  width: 1452px;
+}
+.about_insurance .about_insurance_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 108px;
+  padding: 0 0 147px 0;
+}
+.about_insurance .about_insurance_container .img_holder{
+  width: 763px;
+  height: 729px;
+}
+.about_insurance .about_insurance_container .img_holder img{
+  width: 100%;
+  height:100%;
+}
+.about_insurance .about_insurance_container .text{
+  width: 582px;
+  height: 308px;
+}
+.about_insurance .about_insurance_container .text h2{
+  color: #30363d;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 46px 0;
+}
+.about_insurance .about_insurance_container .text p{
+  color: #30363d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer{
+  background-color: #0f084e;
+  padding: 46px 0 85px 0;
+}
+.footer .footer_container{
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer_container .logo_holder{
+  width: 215px;
+  height: 32px;
+}
+.footer .footer_container .logo_holder img{
+  width: 100%;
+  height: 100%;
+}
+.footer .footer_container .text_app{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer .footer_container .text_app p{
+  color: #b3b5c4;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .footer_container .text_app span{
+  color: #fff;
+  font-weight: 500;
+}
+.footer .footer_container .text_app .app{
+  display: flex;
+  gap: 30px;
+
+}
+.footer .footer_container .text_app .app .app_block{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer_container .text_app .app .app_block{
+  width: 193px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 0 0 0 10px;
+}
+.footer .footer_container .text_app .app .app_block .block_holder{
+  width: 32px;
+  height: 32px;
+}
+.footer .footer_container .text_app .app .app_block .block_holder img{
+  width: 100%;
+  height: 100%;
+}
+.footer .footer_container .text_app .app .app_block .text_block p{
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+}
+.footer .footer_container .text_app .app .app_block .text_block a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer .footer_container .navigation_links{
+  display: flex;
+  gap: 30px;
+}
+.footer .footer_container .navigation_links a{
+  display: block;
+  height: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .footer_container .navigation_links a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+
+
