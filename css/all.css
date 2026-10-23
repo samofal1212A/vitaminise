@@ -239,6 +239,7 @@ main .first-view .baner img{
 }
 main .first-view .text p{
   text-align: center;
+  width: 90%;
 }
 main .first-view .baner{
   width: 100%;
