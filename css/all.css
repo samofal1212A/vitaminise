@@ -230,7 +230,7 @@ main .first-view .baner img{
 
 @media (max-width: 767px){
   main .first-view{
-  height: calc(70vh - 52px);
+  height: auto;
 }
   main .first-view .text h2{
   font-size: 28px;
@@ -243,7 +243,7 @@ main .first-view .text p{
 main .first-view .baner{
   width: 100%;
   height: 215px;
-  margin: 52px 0 0 0;
+  margin: 52px 0 77px 0;
 }
 }
 
@@ -935,7 +935,7 @@ main .first-view .baner{
   gap: 70px;
 }
 .get_insured .phone_container .text{
-  margin: 90% 0 0 0;
+  margin: 100% 0 0 0;
   background-color: #f4f6f9;
   padding: 0;
   box-shadow: 0 -20px 20px rgba(244, 246, 249, 1);
@@ -971,7 +971,37 @@ main .first-view .baner{
   top: 93px;
   right: 98px;
 }
-
+.get_insured .phone_container .whole_block .phone p.white{
+  width: 231px;
+  height: 43px;
+  line-height: 43px;
+  right: 70px;
+}
+.get_insured .phone_container .whole_block .phone p.blue{
+  width: 178px;
+  height: 43px;
+  line-height: 43px;
+}
+.get_insured .phone_container .whole_block .phone .car_holder{
+  width: 54px;
+  height: 54px;
+}
+.get_insured .phone_container .whole_block .phone .text_message{
+  width: 225px;
+  height: 156px;
+}
+.get_insured .phone_container .whole_block .phone p.blue_claims{
+  width: 184px;
+  height: 43px;
+  line-height: 43px;
+  left: 120px;
+}
+.get_insured .phone_container .whole_block .phone p.white_claims{
+  width: 228px;
+  height: 43px;
+  line-height: 43px;
+  right: 42px;
+}
 }
 
 
