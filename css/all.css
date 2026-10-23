@@ -80,39 +80,6 @@ input:focus::-webkit-input-placeholder{color:#000;}
 @media (max-width: 767px) {}
 */
 
-/* ------------тренування початок------------- */
-@media (max-width: 767px) {
-  header .layout{
-    width: 96%;
-  }
-  header .logo{
-    width: 133px;
-    height: 20px;
-  }
-  header nav ul{
-    display: none;
-  }
-  main .first_view .first_view .layout{
-    width: 96%;
-  }
-  /* main .first_view .layout .container{
-    flex-direction: column;
-  } */
-  main .first_view .layout .container .text h2{
-    font-size: 28px;
-    /* text-align: center; */
-  }
-  main .first_view .layout .container .text p{
-    font-size: 16px;
-    /* text-align: center; */
-  }
-  /* main .first_view .layout .container .baner{
-    width: 333px;
-    height: 205px;
-  } */
-}
-
-/* ------------тренування кінець------------- */
 
 #wrapper {
 	display:block;
@@ -124,7 +91,7 @@ input:focus::-webkit-input-placeholder{color:#000;}
   display: block;
   position:relative;
   overflow: hidden;
-  width:1400px;
+  width: 1400px;
 	margin:0 auto 0 auto;
 }
 header,
@@ -167,6 +134,7 @@ header .layout .container .logo h1{
 header .layout .container nav{
   padding: 8px 0 0 0;
   display: flex;
+  align-items: center;
   gap: 60px;
 }
 header .layout .container nav ul{
@@ -174,6 +142,7 @@ header .layout .container nav ul{
   gap: 30px;
 }
 header .layout .container nav ul li a{
+  font-family: "Poppins", sans-serif;
   color: #282D33;
   font-size: 16px;
   font-weight: 500;
@@ -182,275 +151,408 @@ header .layout .container nav ul li a:hover{
   color: #f8992b;
   border-bottom: 1px solid #f8992b;
 }
-header .layout .container nav .language select{
+header .layout .container nav .language{
+  font-family: "Poppins", sans-serif;
   color: #282D33;
   font-size: 16px;
   font-weight: 500;
-  border-color: #fff;
-  border-radius: 8px;
+  border: none;
   cursor: pointer;
 }
-header .layout .container nav .language select:hover{
+header .layout .container nav .language:hover{
   color: #f8992b;
 }
-main .first_view{
+
+@media (max-width: 767px) {
+  header{
+  height: 60px;
+}
+  header .layout{
+    width: 96%;
+  }
+  header .layout .container .logo{
+  width: 132px;
+  height: 20px;
+}
+header .layout .container{
+  padding: 16px 0 0 0;
+}
+header .layout .container nav{
+  padding: 1px 0 0 0;
+}
+  header .layout .container nav ul{
+  display: none;
+}
+}
+
+
+main .first-view{
   width: 100%;
   height: calc(100vh - 80px);
   background-color: #F9F9F9;
 }
-main .first_view .layout{
-  width: 96%;
+main .first-view .layout{
+  width: 90%;
 }
-main .first_view .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+main .first-view .first-view_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  place-items: center;
 }
-main .first_view .text{
-  width: 480px;
-  margin: 0 0 0 125px;
+main .first-view .text{
+  max-width: 520px;
+  width: 100%;
 }
-main .first_view .text h2{
+main .first-view .text h2{
+  font-family: "Poppins", sans-serif;
   color: #30363d;
   font-size: 56px;
   font-weight: 600;
   margin: 0 0 16px 0;
+  line-height: 130%;
 }
-main .first_view .text p{
+main .first-view .text p{
+  font-family: "Open Sans", sans-serif;
   color: #30363d;
   font-size: 18px;
   font-weight: 400;
 }
-main .first_view .baner{
-  width: 961px;
+main .first-view .baner{
+  width: 100%;
   height: 591px;
   margin: 79px 0 0 0;
 }
-main .first_view .baner img{
+main .first-view .baner img{
   width: 100%;
   height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px){
+  main .first-view{
+  height: calc(70vh - 52px);
+}
+  main .first-view .text h2{
+  font-size: 28px;
+  margin: 90px 0 16px 0;
+  line-height: 130%;
+}
+main .first-view .text p{
+  text-align: center;
+}
+main .first-view .baner{
+  width: 100%;
+  height: 215px;
+  margin: 52px 0 0 0;
+}
 }
 
 
 .vitaminise{
   background-color: #0F084E;
-  padding: 0 0 140px 0;
+  padding: 140px 0 140px 0;
 }
 .vitaminise .layout{
-  width: 1440px;
+  width: 100%;
 }
 .vitaminise h2{
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  padding: 140px 0 40px 0;
+  padding: 0 0 40px 0;
 }
-.vitaminise .container .card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.vitaminise .cards_container{
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(260px, 337px));
   gap: 30px;
+  justify-content: center;
 }
-.vitaminise .container .card .top{
-  width: 337px;
+.vitaminise .cards_container .title p,
+.vitaminise .cards_container .title h3,
+.vitaminise .cards_container .title a{
+  color: #fff;
+}
+.vitaminise .cards_container .title p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.vitaminise .cards_container .title h3,
+.vitaminise .cards_container .title a{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.vitaminise .cards_container .title .text{
+  text-align: center;
+  margin: 32px 0 0 0;
+}
+.vitaminise .cards_container .title .text h3{
+  font-size: 32px;
+  margin: 0 0 12px 0;
+}
+.vitaminise .cards_container .title .text p{
+  font-size: 16px;
+}
+.vitaminise .cards_container .title .card{
   height: 164px;
   background-color: #5d5888;
   border-radius: 8px;
+  position: relative;
 }
-.vitaminise .container .card .top .insurance{
+.vitaminise .cards_container .title .card .insurance{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 19px;
+  gap: 20px;
 }
-.vitaminise .container .card .top .insurance .bloc_1{
-  padding: 34px 0 0 0;
-}
-.vitaminise .container .card .top .insurance .bloc_1 span{
+.vitaminise .cards_container .title .card .insurance .insurance_title{
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 6px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
+  gap: 5px;
+  margin: 35px 0 0 0;
 }
-.vitaminise .container .card .top .insurance .line_1,
-.vitaminise .container .card .top .insurance .line_2,
-.vitaminise .container .card .top .insurance .line_3,
-.vitaminise .container .card .top .insurance .line_4{
+.vitaminise .cards_container .title .card .insurance .insurance_title h3{
+  font-size: 15px;
+}
+.vitaminise .cards_container .title .card .insurance .insurance_title .insurance_holder{
+  width: 25px;
+  height: 25px;
+}
+.vitaminise .cards_container .title .card .insurance .insurance_title .insurance_holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vitaminise .cards_container .title .card .insurance .lines{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.vitaminise .cards_container .title .card .insurance .lines .line1,
+.vitaminise .cards_container .title .card .insurance .lines .line2,
+.vitaminise .cards_container .title .card .insurance .lines .line3,
+.vitaminise .cards_container .title .card .insurance .lines .line4{
   height: 8px;
   background-color: #f4f6f9;
   border-radius: 8px;
-  margin: 0 0 8px 0;
 }
-.vitaminise .container .card .top .insurance .line_1{
+.vitaminise .cards_container .title .card .insurance .lines .line1{
   width: 221px;
 }
-.vitaminise .container .card .top .insurance .line_2,
-.vitaminise .container .card .top .insurance .line_4{
+.vitaminise .cards_container .title .card .insurance .lines .line2,
+.vitaminise .cards_container .title .card .insurance .lines .line4{
   width: 192px;
 }
-.vitaminise .container .card .top .insurance .line_3{
+.vitaminise .cards_container .title .card .insurance .lines .line3{
   width: 243px;
 }
-.vitaminise .container .card .top .support{
-  position: absolute;
-}
-.vitaminise .container .card .top .support .message_holder{
+.vitaminise .cards_container .title .card .support .message_holder{
   width: 40px;
   height: 40px;
+  position: absolute;
+  top: 19px;
+  right: 22px;
 }
-.vitaminise .container .card .top .support .message_holder img{
+.vitaminise .cards_container .title .card .support .message_holder img{
   width: 100%;
   height: 100%;
-  position: relative;
-  top: 35%;
-  left: 700%;
+  object-fit: contain;  
 }
-.vitaminise .container .card .top .support .consultant{
+.vitaminise .cards_container .title .card .support .consultant{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  padding: 0 0 0 52px;
+  padding: 57px 0 0 0;
 }
-.vitaminise .container .card .top .support .consultant .img_holder{
-  width: 53px;
-  height: 53px;
+.vitaminise .cards_container .title .card .support .consultant .consultant_holder{
+  width: 54px;
+  height: 54px;
 }
-.vitaminise .container .card .top .support .consultant .img_holder img{
+.vitaminise .cards_container .title .card .support .consultant .consultant_holder img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.vitaminise .container .card .top .support .consultant .consultant_text{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 154px;
-  height: 45px;
-}
-.vitaminise .container .card .top .support .consultant .consultant_text span{
-  color: #fff;
+.vitaminise .cards_container .title .card .support .consultant .consultant_text h3{
   font-size: 15px;
-  font-weight: 600;
+  margin: 0 0 3px 0;
 }
-.vitaminise .container .card .top .support .consultant .consultant_text p{
-  color: #fff;
+.vitaminise .cards_container .title .card .support .consultant .consultant_text p{
   font-size: 14px;
-  font-weight: 400;
   display: flex;
   align-items: center;
-  gap: 3px;
-} 
-.vitaminise .container .card .top .claims{
+  gap: 5px;
+}
+.vitaminise .cards_container .title .card .support .consultant .consultant_text p::after{
+  content: url("../images/emoji_teresa.png");
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.vitaminise .cards_container .title .card .claims{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
-}
-.vitaminise .container .card .top .claims .bloc{
-  display: flex;
-  gap: 15px;
   padding: 35px 0 0 0;
-} 
-.vitaminise .container .card .top .claims .bloc .img_holder{
-  width: 44px;
-  height: 36px;
 }
-.vitaminise .container .card .top .claims .bloc .img_holder img{
+.vitaminise .cards_container .title .card .claims .claims_holder{
+  width: 30px;
+  height: 30px;
+}
+.vitaminise .cards_container .title .card .claims .claims_holder img{
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
-.vitaminise .container .card .top .claims .items .line_1,
-.vitaminise .container .card .top .claims .items .line_2,
-.vitaminise .container .card .top .claims .items .line_3{
+.vitaminise .cards_container .title .card .claims .lines{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.vitaminise .cards_container .title .card .claims .lines .line1,
+.vitaminise .cards_container .title .card .claims .lines .line2,
+.vitaminise .cards_container .title .card .claims .lines .line3{
   background-color: #f4f6f9;
   height: 8px;
   border-radius: 8px;
-  margin: 0 0 8px 0;
 }
-.vitaminise .container .card .top .claims .items .line_1{
+.vitaminise .cards_container .title .card .claims .lines .line1{
   width: 178px;
 }
-.vitaminise .container .card .top .claims .items .line_2{
+.vitaminise .cards_container .title .card .claims .lines .line2{
   width: 155px;
 }
-.vitaminise .container .card .top .claims .items .line_3{
+.vitaminise .cards_container .title .card .claims .lines .line3{
   width: 200px;
 }
-.vitaminise .container .card .top .claims a{
+.vitaminise .cards_container .title .card .claims a{
+  display: block;
+  font-size: 14px;
   width: 243px;
   height: 40px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
   text-align: center;
   line-height: 40px;
-  background-color: #f8992b;
+  background-color: #F8992B;
   border-radius: 8px;
+  transition: 0.3s;
 }
-.vitaminise .container .payments{
+.vitaminise .cards_container .title .card .claims a:hover{
+  background-color: #FF8A01;
+  box-shadow: 0 8px 10px rgba(41, 49, 124, 0.5);
+}
+.vitaminise .cards_container .title .card  .payments{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 43px;
   padding: 30px 0 0 0;
 }
-.vitaminise .container .payments span{
-  color: #fff;
+.vitaminise .cards_container .title .card  .payments h3{
   font-size: 15px;
-  font-weight: 600;
 }
-.vitaminise .container .payments .flex_container{
+.vitaminise .cards_container .title .card  .payments .payments_container{
   display: flex;
   gap: 6px;
   position: relative;
 }
-.vitaminise .container .payments .flex_container a,
-.vitaminise .container .payments .flex_container div{
+.vitaminise .cards_container .title .card  .payments .payments_container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 77px;
   height: 38px;
   background-color: #f4f6f9;
   border-radius: 8px;
 }
-
-.vitaminise .container .payments .flex_container a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.vitaminise .cards_container .title .card  .payments .payments_container a img{
+  width: 24px;
+  height: 24px;
 }
-.vitaminise .container .payments .flex_container .card{
+.vitaminise .cards_container .title .card  .payments .payments_container .card img{
   width: 44px;
-  height: 32px;
+  height: 33px;
   position: absolute;
-  left: 41%;
-  bottom: 63%;
+  bottom: 20px;
 }
-.vitaminise .container .card .all .text{
-  width: 306px;
-  padding: 32px 0 0 0;
-  text-align: center;
+
+@media (max-width: 767px){
+  .vitaminise{
+  padding: 100px 0 50px 0;
 }
-.vitaminise .container .card .all .text h3{
-  color: #fff;
-  font-size: 32px;
-  font-weight: 600;
-  padding: 0 0 12px 0;
+  .vitaminise h2{
+    font-size: 24px;
+  }
+  .vitaminise .cards_container .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  .vitaminise .cards_container .title .text{
+  margin: 0 0 50px 0;
 }
-.vitaminise .container .card .all .text p{
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
+.vitaminise .cards_container .title .text h3{
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+.vitaminise .cards_container .title .card{
+  height: 0;
+  background-color: transparent;
+  border-radius: 0;
+  position: relative;
+}
+.vitaminise .cards_container .title .card .insurance .insurance_title{
+  margin: 0;
+}
+.vitaminise .cards_container .title .card .insurance .insurance_title .insurance_holder{
+  width: 44px;
+  height: 44px;
+}
+.vitaminise .cards_container .title .card .claims .claims_holder{
+  width: 44px;
+  height: 36px;
+}
+.vitaminise .cards_container .title .card .support .message_holder{
+  width: 44px;
+  height: 44px;
+  position: static;
+}
+.vitaminise .cards_container .title .card .claims{
+  padding: 0;
+}
+.vitaminise .cards_container .title .card h3,
+.vitaminise .cards_container .title .card .insurance .lines,
+.vitaminise .cards_container .title .card .support .consultant .consultant_holder,
+.vitaminise .cards_container .title .card .support .consultant .consultant_text p,
+.vitaminise .cards_container .title .card .support .consultant .consultant_holder img,
+.vitaminise .cards_container .title .card .claims .lines,
+.vitaminise .cards_container .title .card .claims a,
+.vitaminise .cards_container .title .card  .payments .payments_container .ico{
+  display: none;
+}
+.vitaminise .cards_container .title .card  .payments{
+  padding: 0;
+}
+.vitaminise .cards_container .title .card  .payments .payments_container a{
+  background-color: transparent;
+}
+.vitaminise .cards_container .title .card  .payments .payments_container .card img{
+  position: static;
+}
 }
 
 .our_policies{
-  padding: 140px 0 0 0;
+  padding: 140px 0 140px 0;
+}
+.our_policies .layout{
+  width: 100%;
 }
 .our_policies h2{
+  font-family: "Poppins", sans-serif;
   color: #30363d;
   font-size: 40px;
   font-weight: 600;
@@ -458,21 +560,22 @@ main .first_view .baner img{
   padding: 0 0 50px 0;
 }
 .our_policies .cards_container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 338px));
   justify-content: center;
-  align-items: center;
-  gap: 29px;
+  align-content: center;
+  gap: 30px;
 }
 .our_policies .cards_container .cards{
   width: 338px;
   height: 450px;
   border-radius: 8px;
   box-shadow: 2px 4px 10px 4px rgba(90%, 90%, 90%, 0.5);
-  margin: 0 0 140px 0;
+  margin: 0 0 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 73px 0 0 0;
+  justify-content: center;
 }
 .our_policies .cards_container .cards .img_holder{
   width: 92px;
@@ -484,12 +587,14 @@ main .first_view .baner img{
   height: 100%;
 }
 .our_policies .cards_container .cards h3{
+  font-family: "Poppins", sans-serif;
   color: #30363d;
   font-size: 32px;
   font-weight: 600;
   margin: 0 0 12px 0;
 }
 .our_policies .cards_container .cards p{
+  font-family: "Open Sans", sans-serif;
   color: #30363d;
   font-size: 16px;
   font-weight: 400;
@@ -508,6 +613,7 @@ main .first_view .baner img{
   text-align: center;
   line-height: 56px;
   margin: 0 0 16px 0;
+  transition: 0.3s;
 }
 .our_policies .cards_container .cards a:hover{
   background-color: #ff8a01;
@@ -519,28 +625,72 @@ main .first_view .baner img{
   font-weight: 600;
 }
 
+@media (max-width: 767px){
+  .our_policies{
+  padding: 100px 0 100px 0;
+}
+.our_policies .layout{
+  width: 96%;
+}
+.our_policies h2{
+  font-size: 24px;
+  padding: 0 0 40px 0;
+}
+.our_policies .cards_container .cards{
+  width: 328px;
+  height: 295px;
+}
+.our_policies .cards_container .cards .img_holder{
+  width: 80px;
+  height: 80px;
+  margin: 0 0 24px 0;
+}
+.our_policies .cards_container .cards h3{
+  font-size: 18px;
+  margin: 0 0 24px 0;
+}
+.our_policies .cards_container .cards p{
+  display: none;
+}
+.our_policies .cards_container .cards a{
+  font-size: 16px;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+}
+}
+
+
 .get_insured{
   background-color: #f4f6f9;
+  padding: 140px 0 140px 0;
+}
+.get_insured .layout{
+  width: 100%;
 }
 .get_insured h2{
+  font-family: "Poppins", sans-serif;
   color: #30363d;
   font-size: 40px;
   font-weight: 600;
-  padding: 140px 0 80px 0;
+  padding: 0 0 80px 0;
   text-align: center;
 }
 .get_insured .phone_container{
-  display:flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns:  745px;
   gap: 80px;
-  padding: 0 0 140px 0;
+  justify-content: center;
 }
 
 .get_insured .phone_container .text{
+  max-width: 337px;
+  width: 100%;
   padding: 85px 0 0 0;
 }
 
 .get_insured .phone_container .text h3{
+  font-family: "Poppins", sans-serif;
   color: #30363d;
   font-size: 18px;
   font-weight: 600;
@@ -551,10 +701,10 @@ main .first_view .baner img{
   border-radius: 5px;
 }
 .get_insured .phone_container .text p{
+  font-family: "Open Sans", sans-serif;
   color: #30363d;
   font-size: 16px;
   font-weight: 400;
-  width: 337px;
 }
 .get_insured .phone_container .text .arrow_holder{
   width: 260px;
@@ -593,18 +743,17 @@ main .first_view .baner img{
   justify-content: center;
   gap: 78px;
 }
-.get_insured .phone_container .whole_block .phone{
-  position: relative;
-}
-.get_insured .phone_container .whole_block .phone .img_holder{
+.get_insured .phone_container .whole_block .phone .phone_holder{
   width: 270px;
   height: 473px;
+  position: relative;
 }
-.get_insured .phone_container .whole_block .phone .img_holder img{
+.get_insured .phone_container .whole_block .phone .phone_holder img{
   width: 100%;
   height: 100%;
 }
 .get_insured .phone_container .whole_block .phone p{
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -671,6 +820,7 @@ main .first_view .baner img{
   display: block;
 }
 .get_insured .phone_container .whole_block .phone .text_message p{
+  font-family: "Open Sans", sans-serif;
   color: #30363d;
   font-size: 10px;
   font-weight: 600;
@@ -698,6 +848,10 @@ main .first_view .baner img{
   left: 40px;
   z-index: 1;
 }
+.get_insured .phone_container .whole_block .phone .card_holder img{
+  width: 100%;
+  height: 100%;
+}
 .get_insured .phone_container .whole_block .phone .text_pay{
   width: 220px;
   height: 141px;
@@ -723,7 +877,7 @@ main .first_view .baner img{
   text-align: center;
   display: block;
 }
-.get_insured .phone_container .whole_block .phone .text_pay button{
+.get_insured .phone_container .whole_block .phone .text_pay a{
   color: #fff;
   font-size: 12px;
   font-weight: 600;
@@ -766,62 +920,145 @@ main .first_view .baner img{
   flex-direction: row-reverse;
 }
 
+@media (max-width: 767px){
+  .get_insured{
+  padding: 100px 0 100px 0;
+}
+.get_insured .layout{
+  width: 96%;
+}
+.get_insured h2{
+  font-size: 24px;
+  padding: 0 0 40px 0;
+}
+.get_insured .phone_container{
+  gap: 70px;
+}
+.get_insured .phone_container .text{
+  margin: 90% 0 0 0;
+  background-color: #f4f6f9;
+  padding: 0;
+  box-shadow: 0 -20px 20px rgba(244, 246, 249, 1);
+  position: absolute;
+  z-index: 1
+}
+.get_insured .phone_container .text h3{
+  padding: 0 0 18px 0;
+}
+  .get_insured .phone_container .text .arrow_holder img{
+  display: none;
+}
+.get_insured .phone_container .whole_block{
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0;
+}
+.get_insured .phone_container .whole_block .phone .card_holder{
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 72px;
+  left: 40px;
+  z-index: 1;
+}
+.get_insured .phone_container .whole_block .phone .text_pay{
+  width: 220px;
+  height: 141px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px rgba(90%, 90%, 90%, 0.5);
+  position: absolute;
+  top: 93px;
+  right: 98px;
+}
 
-
-
-
-
-
-
-
-
-
+}
 
 
 .about_insurance{
-  padding: 134px 0 0 0;
+  padding: 134px 0 175px 0;
 }
 .about_insurance .layout{
-  width: 1452px;
+  width: 100%;
 }
 .about_insurance .about_insurance_container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 762px));
   justify-content: center;
   align-items: center;
   gap: 108px;
-  padding: 0 0 147px 0;
+  grid-template-areas: 
+        "image text";
 }
 .about_insurance .about_insurance_container .img_holder{
-  width: 763px;
+  max-width: 763px;
+  width: 100%;
   height: 729px;
+  grid-area: image;
+
 }
 .about_insurance .about_insurance_container .img_holder img{
+  display: block;
   width: 100%;
   height:100%;
+  object-fit: contain;
 }
 .about_insurance .about_insurance_container .text{
-  width: 582px;
-  height: 308px;
+  max-width: 582px;
+  width: 100%;
+  grid-area: text;
 }
 .about_insurance .about_insurance_container .text h2{
+  font-family: "Poppins", sans-serif;
   color: #30363d;
   font-size: 40px;
   font-weight: 600;
   margin: 0 0 46px 0;
 }
 .about_insurance .about_insurance_container .text p{
+  font-family: "Open Sans", sans-serif;
   color: #30363d;
   font-size: 16px;
   font-weight: 400;
 }
 
+@media (max-width: 767px){
+  .about_insurance{
+  padding: 100px 0 100px 0;
+}
+.about_insurance .layout{
+  width: 90%;
+}
+.about_insurance .about_insurance_container{
+  gap: 40px;
+  justify-items: center;
+  grid-template-areas: 
+        "text"
+        "image";
+}
+.about_insurance .about_insurance_container .img_holder{
+  width: 328px;
+  height: 326px;
+}
+.about_insurance .about_insurance_container .text h2{
+  font-size: 24px;
+  margin: 0 0 40px 0;
+}
+}
+
+
 .footer{
   background-color: #0f084e;
   padding: 46px 0 85px 0;
 }
+.footer .layout{
+  width: 100%;
+}
 .footer .footer_container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 416px));
   justify-content: space-around;
+  align-content: center;
 }
 .footer .footer_container .logo_holder{
   width: 215px;
@@ -837,25 +1074,24 @@ main .first_view .baner img{
   gap: 32px;
 }
 .footer .footer_container .text_app p{
+  font-family: "Open Sans", sans-serif;
   color: #b3b5c4;
   font-size: 16px;
   font-weight: 400;
 }
 .footer .footer_container .text_app span{
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   font-weight: 500;
 }
 .footer .footer_container .text_app .app{
   display: flex;
   gap: 30px;
-
 }
 .footer .footer_container .text_app .app .app_block{
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.footer .footer_container .text_app .app .app_block{
   width: 193px;
   height: 60px;
   border: 1px solid #fff;
@@ -871,15 +1107,11 @@ main .first_view .baner img{
   height: 100%;
 }
 .footer .footer_container .text_app .app .app_block .text_block p{
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   font-size: 10px;
   font-weight: 400;
   padding: 0 0 5px 0;
-}
-.footer .footer_container .text_app .app .app_block .text_block a{
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
 }
 .footer .footer_container .navigation_links{
   display: flex;
@@ -894,6 +1126,44 @@ main .first_view .baner img{
 }
 .footer .footer_container .navigation_links a:hover{
   border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 767px){
+  .footer{
+  padding: 60px 0 60px 0;
+}
+.footer .layout{
+  width: 96%;
+}
+.footer .footer_container{
+  justify-items: center;
+}
+.footer .footer_container .logo_holder{
+  width: 133px;
+  height: 20px;
+  margin: 0 0 40px 0;
+}
+.footer .footer_container .text_app{
+  gap: 24px;
+}
+.footer .footer_container .text_app p{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.footer .footer_container .text_app span{
+  font-size: 16px;
+}
+.footer .footer_container .text_app .app{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer_container .navigation_links{
+  display: none;
+}
 }
 
 

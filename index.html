@@ -1,10 +1,12 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1" />
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Vitaminise</title>
 </head>
@@ -31,22 +33,19 @@
 								<a href="#">Disease</a>
 							</li>
 						</ul>
-						<div class="language">
-							<select name="language">
+							<select name="language" class="language">
 								<option value="en">EN</option>
 								<option value="uk">UK</option>
-								<option value="ru">RU</option>
 							</select>
-						</div>
 					</nav>
 				</div>
 			</div> 
 		</header>
 		<main>
 			<div id="content">
-				<section class="first_view">
+				<section class="first-view">
 					<div class="layout">
-						<div class="container">
+						<div class="first-view_container">
 							<div class="text">
 								<h2>Forget everything you know about insurance</h2>
 								<p>Instant everything. Incredible prices. Big heart.</p>
@@ -60,21 +59,21 @@
 				<section class="vitaminise">
 					<div class="layout">
 						<h2>What is Vitaminise</h2>
-						<div class="container">
-							<div class="card">
-								<div class="all">
-									<div class="top">
+							<div class="cards_container">
+								<div class="title">
+									<div class="card">
 										<div class="insurance">
-											<div class="bloc_1">
-												<span>
-													<img src="images/emoji.png" alt="emoji">Insurance activated
-												</span>
+											<div class="insurance_title">
+												<div class="insurance_holder">
+													<img src="images/emoji.png" alt="emoji">
+												</div>
+												<h3>Insurance activated</h3>
 											</div>
-											<div class="bloc_2">
-												<div class="line_1"></div>
-												<div class="line_2"></div>
-												<div class="line_3"></div>
-												<div class="line_4"></div>
+											<div class="lines">
+												<div class="line1"></div>
+												<div class="line2"></div>
+												<div class="line3"></div>
+												<div class="line4"></div>
 											</div>
 										</div>
 									</div>
@@ -83,19 +82,19 @@
 										<p>Protection for your home and stuff</p>
 									</div>
 								</div>
-								<div class="all">
-									<div class="top">
+								<div class="title">
+									<div class="card">
 										<div class="support">
 											<div class="message_holder">
 												<img src="images/message.png" alt="vitaminise">
 											</div>
 											<div class="consultant">
-												<div class="img_holder">
+												<div class="consultant_holder">
 													<img src="images/teresa.png" alt="vitaminise">
 												</div>
 												<div class="consultant_text">
-													<span>Teresa</span>
-													<p>We are here for you <img src="images/emoji_teresa.png" alt="vitaminise"></p>
+													<h3>Teresa</h3>
+													<p>We are here for you</p>
 												</div>
 											</div>
 										</div>
@@ -106,19 +105,17 @@
 									</div>
 								</div>
 
-								<div class="all">
-									<div class="top">
+								<div class="title">
+									<div class="card">
 										<div class="claims">
-											<div class="bloc">
-												<div class="img_holder">
+												<div class="claims_holder">
 													<img src="images/ico_claims.png" alt="vitaminise">
 												</div>
-												<div class="items">
-													<div class="line_1"></div>
-													<div class="line_2"></div>
-													<div class="line_3"></div>
+												<div class="lines">
+													<div class="line1"></div>
+													<div class="line2"></div>
+													<div class="line3"></div>
 												</div>
-											</div>
 											<a href="#">New claim</a>
 										</div>
 									</div>
@@ -128,19 +125,18 @@
 									</div>
 								</div>
 
-								<div class="all">
-									<div class="top">
+								<div class="title">
+									<div class="card">
 										<div class="payments">
-											<span>Pay with</span>
-											<div class="flex_container">
-												<a href="#">
+											<h3>Pay with</h3>
+											<div class="payments_container">
+												<a href="#" class="ico">
 													<img src="images/ico_google.png" alt="vitaminise">
 												</a>
 												<a href="#" class="card">
 													<img src="images/card.png" alt="vitaminise">
 												</a>
-												<div class="item"></div>
-												<a href="#">
+												<a href="#" class="ico">
 													<img src="images/ico_apple.png" alt="vitaminise">
 												</a>
 											</div>
@@ -152,7 +148,6 @@
 									</div>
 								</div>
 							</div>
-						</div>
 					</div>
 				</section>
 				<section class="our_policies">
@@ -195,18 +190,19 @@
 						<div class="phone_container">
 							<div class="whole_block">
 								<div class="text">
-									<h3>Connect to your <br><span>assistant</span></h3>
+									<h3>Connect to your <span>assistant</span></h3>
 									<p>Our caring assistant will help you to find what you need within few minutes.</p>
 									<div class="arrow_holder arrow_assistant">
 										<img src="images/arrow.png" alt="vitaminise">
 									</div>
 								</div>
 								<div class="phone">
-									<div class="img_holder">
+									<div class="phone_holder">
 										<img src="images/img_assistant.png" alt="vitaminise">
-									</div>
+										<div class="blur-bottom"></div>
 										<p class="white">Hey, Jane 🤗  How can I help you?</p>
 										<p class="blue">I need a home insurance</p>
+									</div>
 								</div>
 							</div>
 							<div class="whole_block img_right">
@@ -218,21 +214,21 @@
 									</div>
 								</div>
 								<div class="phone">
-									<div class="img_holder">
+									<div class="phone_holder">
 										<img src="images/img_policy.png" alt="vitaminise">
-									</div>
-									<div class="car_holder">
-										<img src="images/ico_car.png" alt="vitaminise">
-									</div>
-									<div class="text_message">
-										<h4>Your car insurance</h4>
-										<span>€16,50 / month</span>
-										<p>What’s covered</p>
-										<div class="elements">
-											<div class="line"></div>
+										<div class="car_holder">
+											<img src="images/ico_car.png" alt="vitaminise">
 										</div>
-										<div class="elements">
-											<div class="line"></div>
+										<div class="text_message">
+											<h4>Your car insurance</h4>
+											<span>€16,50 / month</span>
+											<p>What’s covered</p>
+											<div class="elements">
+												<div class="line"></div>
+											</div>
+											<div class="elements">
+												<div class="line"></div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -246,16 +242,16 @@
 									</div>
 								</div>
 								<div class="phone">
-									<div class="img_holder">
+									<div class="phone_holder">
 										<img src="images/img_policy.png" alt="vitaminise">
-									</div>
-									<div class="card_holder">
-										<img src="images/ico_card.png" alt="vitaminise">
-									</div>
-									<div class="text_pay">
-										<h4>How would you like to pay?</h4>
-										<span>€16,50</span>
-										<button>Get insurance</button>
+										<div class="card_holder">
+											<img src="images/ico_card.png" alt="vitaminise">
+										</div>
+										<div class="text_pay">
+											<h4>How would you like to pay?</h4>
+											<span>€16,50</span>
+											<a href="#">Get insurance</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -268,11 +264,11 @@
 									</div>
 								</div>
 								<div class="phone">
-									<div class="img_holder">
+									<div class="phone_holder">
 										<img src="images/img_claims.png" alt="vitaminise">
+										<p class="blue_claims">Hi! I’d like to make a claim</p>
+										<p class="white_claims">Hi, Jane! Tell me what’s happened</p>
 									</div>
-									<p class="blue_claims">Hi! I’d like to make a claim</p>
-									<p class="white_claims">Hi, Jane! Tell me what’s happened</p>
 								</div>
 							</div>
 						</div>
@@ -299,29 +295,31 @@
 				<div class="layout">
 					<div class="footer_container">
 						<div class="logo_holder">
-							<img src="images/logo_footer.png" alt="vitaminise">
+							<a href="#">
+								<img src="images/logo_footer.png" alt="vitaminise">
+							</a>
 						</div>
 						<div class="text_app">
 							<p><span>Get our app</span> Coming soon</p>
 							<div class="app">
-								<div class="app_block">
+								<a href="" class="app_block">
 									<div class="block_holder">
 										<img src="images/ico_app_store.png" alt="vitaminise">
 									</div>
 									<div class="text_block">
 										<p>Available on the</p>
-										<a href="#">App Store</a>
+										<span>App Store</span>
 									</div>
-								</div>
-								<div class="app_block">
+								</a>
+								<a href="#" class="app_block">
 									<div class="block_holder">
 										<img src="images/ico_google_play.png" alt="vitaminise">
 									</div>
 									<div class="text_block">
 										<p>Get it on</p>
-										<a href="#">Google Play</a>
+										<span>Google Play</span>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div class="navigation_links">
