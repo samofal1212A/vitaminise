@@ -32,42 +32,11 @@ Vitaminise — це вебсторінка, присвячена онлайн-с
 
 Для побудови макета застосовувалися Flexbox, CSS Grid та гнучкі розміри елементів.
 
-## 📂 Структура проєкту
+## Demo
 
-```text
-Vitaminise/
-│
-├── css/
-│   ├── all.css
-│   └── fonts.css
-│
-├── images/
-│
-├── js/
-│   └── main.js
-│
-├── index.html
-└── README.md
-```
+[Переглянути сайт](https://samofal1212a.github.io/vitaminise/)
 
-## 🚀 Запуск проєкту
+## Автор
 
-1. Клонуйте репозиторій:
+Anastasia — Frontend Developer
 
-   ```bash
-   git clone URL_ВАШОГО_РЕПОЗИТОРІЮ
-   ```
-
-2. Перейдіть до папки проєкту:
-
-   ```bash
-   cd Vitaminise
-   ```
-
-3. Відкрийте файл `index.html` у браузері.
-
-## 👩‍💻 Автор
-
-Навчальний проєкт створений у межах самостійного вивчення frontend-розробки.
-
-**Автор:** [Ваше ім'я](https://github.com/ВАШ_GITHUB_АКАУНТ)
